@@ -1,0 +1,200 @@
+import 'package:flutter/material.dart';
+
+const List song_type_1 = [
+  "Music",
+  "Dance",
+  "Electronic",
+  "Classic",
+  "Pop",
+  "Country",
+];
+const List song_type_2 = [
+  "Podcasts",
+  "Made For You",
+  "Charts",
+  "New Releases",
+  "Discover",
+  "Concerts",
+];
+const List songs = [
+  {
+    "img": "assets/images/img_3.jpg",
+    "title": "Avicii",
+    "description": "EDM Hits!",
+    "song_count": "100 songs",
+    "date": "about 19 hr",
+    "color": Color(0xFFf69129),
+    "song_url": "songs/1.mp3",
+    "songs": [
+      {"title": "Wake Me Up ", "duration": "3:21"},
+      {"title": "You Make Me", "duration": "3:47"},
+      {"title": "Hey Brother", "duration": "2:31"},
+      {"title": "Addicted To You", "duration": "3:42"},
+      {"title": "Dear Boy", "duration": "2:59"},
+      {"title": "Liar Liar", "duration": "3:51"},
+      {"title": "Shame On Me", "duration": "2:48"},
+    ]
+  },
+  {
+    "img": "assets/images/img_5.jpg",
+    "title": "Avril Lavigne",
+    "description": "Avril Best Hits",
+    "song_count": "324 songs",
+    "date": "about 14 hr",
+    "color": Color(0xFF64849c),
+    "song_url": "songs/2.mp3",
+    "songs": [
+      {"title": "4 Real", "duration": "3:01"},
+      {"title": "Alice", "duration": "3:54"},
+      {"title": "Anything but Ordinary", "duration": "3:22"},
+      {"title": "Bad Girl", "duration": "3:03"},
+      {"title": "Bitchin' Summer", "duration": "3:31"},
+      {"title": "Black Star", "duration": "3:09"},
+      {"title": "Bigger Wow", "duration": "3:40"},
+    ]
+  },
+  {
+    "img": "assets/images/img_7.jpg",
+    "title": "Rihanna",
+    "description": "Essentials Mix",
+    "song_count": "195 songs",
+    "date": "about 10 hr",
+    "color": Color(0xFF58546c),
+    "song_url": "songs/1.mp3",
+    "songs": [
+      {"title": "Work", "duration": "3:20"},
+      {"title": "Don't Stop The Music", "duration": "3:07"},
+      {"title": "Umbrella", "duration": "2:11"},
+      {"title": "Rude Boy", "duration": "2:09"},
+      {"title": "Disturbia", "duration": "2:29"},
+      {"title": "We Found Love ", "duration": "2:38"},
+      {"title": "Wild Thoughts", "duration": "3:49"},
+    ]
+  },
+  {
+    "img": "assets/images/img_4.jpg",
+    "title": "The Black Eyed Peas",
+    "description": "Beats to relax, study and focus.",
+    "song_count": "599 songs",
+    "date": "about 21 hr",
+    "color": Color(0xFFbad6ec),
+    "song_url": "songs/2.mp3",
+    "songs": [
+      {"title": "BACK 2 HIPHOP", "duration": "2:21"},
+      {"title": "YES OR NO", "duration": "3:17"},
+      {"title": "GET READY", "duration": "3:31"},
+      {"title": "4EVER", "duration": "3:42"},
+      {"title": "CONSTANT pt.1 pt.2", "duration": "3:29"},
+      {"title": "DOPENESS", "duration": "3:51"},
+      {"title": "ALL AROUND THE WORLD", "duration": "3:39"},
+    ]
+  },
+  {
+    "img": "assets/images/img_2.jpg",
+    "title": "Mahmut Orhan",
+    "description": "The perfect study beats, twenty four seven.",
+    "song_count": "317 songs",
+    "date": "about 11 hr",
+    "color": Color(0xFF93689a),
+    "song_url": "songs/1.mp3",
+    "songs": [
+      {"title": "Feel", "duration": "3:21"},
+      {"title": "6 Days", "duration": "2:17"},
+      {"title": "Save Me", "duration": "1:31"},
+      {"title": "In Control", "duration": "1:42"},
+      {"title": "Nu Vreau", "duration": "1:29"},
+      {"title": "Game Throne Remix", "duration": "1:51"},
+      {"title": "Without You", "duration": "1:39"},
+    ]
+  },
+  {
+    "img": "assets/images/img_6.jpg",
+    "title": "Calvin Harris 18 Months",
+    "description": "Popular 7 Hits",
+    "song_count": "130 songs",
+    "date": "about 7 hr",
+    "color": Color(0xFFa4c4d3),
+    "song_url": "songs/2.mp3",
+    "songs": [
+      {"title": "Thinking About You (Feat. Ayah)", "duration": "4:07"},
+      {"title": "One Kiss (Feat. Dua Lipa)", "duration": "3:17"},
+      {"title": "Summer", "duration": "3:34"},
+      {"title": "Let's Go (Feat.Ne)", "duration": "3:51"},
+      {"title": "Dance Wiv Me (Feat.Dizzee)", "duration": "3:43"},
+      {"title": "Ready For The Weekend", "duration": "3:51"},
+      {"title": "Earth", "duration": "1:39"},
+    ]
+  },
+  {
+    "img": "assets/images/img_1.jpg",
+    "title": "DJ snake",
+    "description": "Essentials Tracks",
+    "song_count": "50 songs",
+    "date": "about 17 hr",
+    "color": Color(0xFF5e4f78),
+    "song_url": "songs/1.mp3",
+    "songs": [
+      {"title": "Recognize", "duration": "3:01"},
+      {"title": "Loco Contigo", "duration": "3:54"},
+      {"title": "Let Me Love You", "duration": "3:22"},
+      {"title": "Taki Taki", "duration": "3:23"},
+      {"title": "A Different Way", "duration": "3:31"},
+      {"title": "Enzo", "duration": "4:09"},
+      {"title": "You Know You Like It", "duration": "3:40"},
+    ]
+  },
+  {
+    "img": "assets/images/img_8.jpg",
+    "title": "Madonna",
+    "description": "Frozen-2021",
+    "song_count": "69 songs",
+    "date": "2 hr 14 min",
+    "color": Color(0xFFa4c1ad),
+    "song_url": "songs/2.mp3",
+    "songs": [
+      {"title": "Frozen-", "duration": "3:20"},
+      {"title": "Frozen (Stereo MCs Remix)", "duration": "3:07"},
+      {"title": "Frozen (Extended Club Mix)", "duration": "2:11"},
+      {"title": "Frozen (Meltdown Mix - Long Version)", "duration": "2:09"},
+      {"title": "Frozen (Widescreen Mix)", "duration": "2:29"},
+      {"title": "Frozen (Edit)", "duration": "2:38"},
+      {"title": "Frozen (Stereo MCs Remix Edit)", "duration": "2:49"},
+    ]
+  },
+  {
+    "img": "assets/images/img_9.jpg",
+    "title": "Desiigner",
+    "description": "Rap songs.",
+    "song_count": "60 songs",
+    "date": "3 hr 25 min",
+    "color": Color(0xFFd9e3ec),
+    "song_url": "songs/1.mp3",
+    "songs": [
+      {"title": "Panda", "duration": "3:31"},
+      {"title": "Amen", "duration": "3:17"},
+      {"title": "I Get That", "duration": "3:11"},
+      {"title": "Liife", "duration": "2:42"},
+      {"title": "Champions", "duration": "3:29"},
+      {"title": "Timmy Turner", "duration": "2:51"},
+      {"title": "Outlet", "duration": "4:19"},
+    ]
+  },
+  {
+    "img": "assets/images/img_10.jpg",
+    "title": "Dusk Till Dawn ",
+    "description": "Get happy with today's dose of feel-good songs",
+    "song_count": "75 songs",
+    "date": "3 hr 56 min",
+    "color": Color(0xFF4e6171),
+    "song_url": "songs/2.mp3",
+    "songs": [
+      {"title": "Union Jack  -  Cactus (John Askew Rework)", "duration": "1:21"},
+      {"title": "Will Atkinson  -  Awake", "duration": "3:27"},
+      {"title": "John Askew -  Tooth Decay On Tuesday", "duration": "1:31"},
+      {"title": "EverLight feat. Emma Chatt  -  Obelisk", "duration": "1:42"},
+      {"title": "Zach Zlov - Ergo", "duration": "1:29"},
+      {"title": "EverLight - Renegade Bass", "duration": "1:51"},
+      {"title": "Tasso  - Attrition ", "duration": "1:39"},
+    ]
+  }
+];
